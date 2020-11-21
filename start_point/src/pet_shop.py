@@ -12,16 +12,8 @@ def get_total_cash(setUp):
     return total_cash
 
 def add_or_remove_cash(setUp, amount_in_or_out):
-    # total_cash = setUp['admin']['total_cash']
-    # print(get_total_cash(setUp), amount_in_or_out)
-    # print('existing total', total_cash)
-    # total_cash = setUp['admin']['total_cash'] + amount_in_or_out
-    # sum = get_total_cash(setUp) + amount_in_or_out
-    # print('sum = ', sum)
-    # print 
     setUp['admin']['total_cash'] += amount_in_or_out
-    print(setUp['admin']['total_cash'])
-    # return sum
 
-    # print('new total = ', total_cash) #sense check
-    # return new_total
+
+def get_pets_sold(setUp):
+    return setUp['admin']['pets_sold']
