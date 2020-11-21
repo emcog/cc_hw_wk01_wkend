@@ -17,3 +17,14 @@ def add_or_remove_cash(setUp, amount_in_or_out):
 
 def get_pets_sold(setUp):
     return setUp['admin']['pets_sold']
+
+def increase_pets_sold(setUp, pet_sales):
+    setUp['admin']['pets_sold'] += pet_sales
+
+def get_stock_count(setUp):
+    # find length of 
+    return len(setUp['pets'])
+
+def get_pets_by_breed(setUp):
+    # use the method which take name value 
+    # total the number found
