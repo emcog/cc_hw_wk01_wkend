@@ -41,15 +41,11 @@ def get_pets_by_breed(setUp, breed_search):
 
 
 def find_pet_by_name(setUp, name_search):
-    pets = []
     i = 0
     stock_pets = setUp['pets']
-    print(pets)
 
     for pet in stock_pets:
-        if stock_pets[i]['breed'] == breed_search:
+        if stock_pets[i]['name'] == name_search:
             print('pet', pet)
-            pets.append(pet)
+            return pet
         i += 1
-    
-    return pets
