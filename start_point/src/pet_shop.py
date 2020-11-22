@@ -46,6 +46,31 @@ def find_pet_by_name(setUp, name_search):
 
     for pet in stock_pets:
         if stock_pets[i]['name'] == name_search:
-            print('pet', pet)
             return pet
         i += 1
+
+
+def remove_pet_by_name(setUp, name_search):
+    # uses the pop() method
+    # find the pet i by looping through pets
+    # if pet with name is found store i
+    # pass i to pop
+    # update list
+    i = 0
+    pet_to_remove = None
+    stock_pets = setUp['pets']
+
+    for pet in stock_pets:
+        if stock_pets[i]['name'] == name_search:
+            pet_to_remove = i
+            
+            # print('pet', pet)
+            # return pet
+        i += 1
+
+    stock_pets.pop(pet_to_remove)
+
+
+def add_pet_to_stock(setUp, new_pet):
+    stock_pets = setUp['pets']
+    stock_pets.append(new_pet)
