@@ -74,3 +74,8 @@ def remove_pet_by_name(setUp, name_search):
 def add_pet_to_stock(setUp, new_pet):
     stock_pets = setUp['pets']
     stock_pets.append(new_pet)
+
+
+def get_customer_cash(setUp):
+    customer_cash = setUp['cash']
+    return customer_cash
