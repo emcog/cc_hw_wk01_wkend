@@ -83,3 +83,8 @@ def get_customer_cash(setUp):
 
 def remove_customer_cash(setUp, payment):
     setUp['cash'] = setUp['cash'] - payment
+
+
+def get_customer_pet_count(setUp):
+    pet_count = len(setUp['pets'])
+    return pet_count
