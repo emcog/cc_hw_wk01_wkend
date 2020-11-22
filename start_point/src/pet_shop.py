@@ -1,4 +1,6 @@
 # WRITE YOUR FUNCTIONS HERE
+import pdb
+
 
 def get_pet_shop_name(setUp):
     name = setUp['name']
@@ -25,6 +27,29 @@ def get_stock_count(setUp):
     # find length of 
     return len(setUp['pets'])
 
-def get_pets_by_breed(setUp):
-    # use the method which take name value 
-    # total the number found
+def get_pets_by_breed(setUp, breed_search):
+    pets = []
+    i = 0
+    stock_pets = setUp['pets']
+
+    for pet in stock_pets:
+        if stock_pets[i]['breed'] == breed_search:
+            pets.append(pet)
+        i += 1
+    
+    return pets
+
+
+def find_pet_by_name(setUp, name_search):
+    pets = []
+    i = 0
+    stock_pets = setUp['pets']
+    print(pets)
+
+    for pet in stock_pets:
+        if stock_pets[i]['breed'] == breed_search:
+            print('pet', pet)
+            pets.append(pet)
+        i += 1
+    
+    return pets
